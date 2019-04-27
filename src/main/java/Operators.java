@@ -1,8 +1,11 @@
 import static java.lang.Math.round;
 
+/*
+ * Day 2: Operators
+ */
+
 public class Operators {
 
-  // Complete the solve function below.
   static void totalCost(double mealCost, int tipPercent, int taxPercent) {
     double tips = mealCost * tipPercent / 100;
     double tax = mealCost * taxPercent / 100;

@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/*
+ * Day 1: Data Types
+ */
+
 public class DataTypes {
 
     public static void main(String[] args) {

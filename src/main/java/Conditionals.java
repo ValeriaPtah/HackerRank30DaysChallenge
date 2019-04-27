@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/*
+ * Day 3: Intro to Conditional Statements
+ */
+
 public class Conditionals {
 
 
