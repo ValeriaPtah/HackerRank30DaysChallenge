@@ -18,6 +18,23 @@ class BinaryNumbers {
     return max;
   }
 
+  static int maxZeroGap(List<Integer> binary) {
+    int max = 0;
+    for (Integer bit : binary) {
+      if (bit == 1) {
+        int count = 0;
+        for (int i = binary.indexOf(bit) + 1; i < binary.size() - 1; i++) {
+          int zero = binary.get(i);
+          count = (zero == 0 ? count + 1 : 0);
+          if ((count > max) && (binary.get(i + 1) == 1)) {
+            max = count;
+          }
+        }
+      }
+    }
+    return max;
+  }
+
   static List<Integer> toBinary(int decimal) {
     List<Integer> binary = new ArrayList<>();
     while (decimal > 0) {

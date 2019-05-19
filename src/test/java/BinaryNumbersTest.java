@@ -21,4 +21,10 @@ class BinaryNumbersTest {
     assertEquals(3, BinaryNumbers.countSequentialBits(BinaryNumbers.toBinary(14)));
     assertEquals(2, BinaryNumbers.countSequentialBits(BinaryNumbers.toBinary(345)));
   }
+
+  @Test
+  void countSequentialZeroesTest() {
+    assertEquals(0, BinaryNumbers.maxZeroGap(BinaryNumbers.toBinary(32)));
+    assertEquals(2, BinaryNumbers.maxZeroGap(BinaryNumbers.toBinary(9)));
+  }
 }
